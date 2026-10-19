@@ -1,0 +1,94 @@
+{
+  "downloadedAt": "2026-09-15T14:20:36.6678193Z",
+  "purpose": "Local read-only source references; no external build or install scripts executed",
+  "repositories": [
+    {
+      "directory": "HorizunGroup--horizun-revit-mcp",
+      "origin": "https://github.com/HorizunGroup/horizun-revit-mcp.git",
+      "commit": "cc4ea04e9ecfe547ad349f22e0864019ce1ead1f",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "A7965E9D98308B81EBF69330C5474849287FDF66B91F3D159FFFD1773EBF90B4"
+        },
+        {
+          "path": "NOTICE",
+          "sha256": "3C870FEA355917C18C7A1851A0D83640C0B3C9E3A2C2EB0FCA6A81DB4F9AD379"
+        },
+        {
+          "path": "THIRD-PARTY-NOTICES.md",
+          "sha256": "426D141884645842BCE83D1507AFE945B055EF48A34FC4237716BD1111CCC81F"
+        }
+      ]
+    },
+    {
+      "directory": "LuDattilo--RevitCortex",
+      "origin": "https://github.com/LuDattilo/RevitCortex.git",
+      "commit": "8b2556daefb2bf88f0a7a17bf28f2352fe0b0e33",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "72B975DD2765F68702FC0A4655AC10D3986FD5ECBE6225B99FE5F6FFDC717161"
+        }
+      ]
+    },
+    {
+      "directory": "mcp-servers-for-revit--mcp-servers-for-revit",
+      "origin": "https://github.com/mcp-servers-for-revit/mcp-servers-for-revit.git",
+      "commit": "86cf7057785f2423fc0d0892c9a5d9c93deb1aa3",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "73E3E6E3453BE403933B8E9F4D5E08B5C97054586EAD87E98067B57AFD9D7C80"
+        }
+      ]
+    },
+    {
+      "directory": "mroshdy91--RevitAtlas",
+      "origin": "https://github.com/mroshdy91/RevitAtlas.git",
+      "commit": "af3346012a488ee728397f51c2f546edc813dc21",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "2F5614C6F902AE487B6BD7DBD8B7489C60EE57D31B3A0BF0351AC6A3B686088E"
+        }
+      ]
+    },
+    {
+      "directory": "mskim274--revit-mcp-v2",
+      "origin": "https://github.com/mskim274/revit-mcp-v2.git",
+      "commit": "9d2b3d95086c6e18653e2227947c757f8b3f3514",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "3529B55F2F2DB9C2D90D4A641F99B8D2ED963541C0CEBCAFA8E40F3FA7F9FD71"
+        },
+        {
+          "path": "THIRD-PARTY-NOTICES.md",
+          "sha256": "28B268DEBF8908EE4D99C8CBF0BFCEC2B4AE0001633CCCF049F320322F1F4776"
+        }
+      ]
+    },
+    {
+      "directory": "Sam-AEC--aec-model-bridge",
+      "origin": "https://github.com/Sam-AEC/aec-model-bridge.git",
+      "commit": "aed846f877633ffb71fec7071866819aaa7fd2d8",
+      "shallow": true,
+      "licenseFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "8B4B7E955EDDB59F0277E9B228B54113FDF6797A2AEDE588E7FA4AFF4DECC4B7"
+        },
+        {
+          "path": "NOTICE",
+          "sha256": "B54111BDBE6F42FC59BB484AFEC565F1F1882F96998DD0BF9FD72F91A99DF20A"
+        }
+      ]
+    }
+  ]
+}

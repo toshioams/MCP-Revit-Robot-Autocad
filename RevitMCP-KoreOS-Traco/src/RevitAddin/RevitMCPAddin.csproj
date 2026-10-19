@@ -1,0 +1,161 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <RootNamespace>RevitMCPAddin</RootNamespace>
+    <AssemblyName>RevitMCPAddin</AssemblyName>
+    <!-- AutoAudit dockable panel hosts a WPF WebView2 control -->
+    <UseWPF>true</UseWPF>
+    <LangVersion>latest</LangVersion>
+
+    <!-- Single source of truth for the C# build's semver. Kept in lock-step with
+         src/McpServer/package.json by scripts/check-version.mjs. /health reports
+         this via the compiled AssemblyInformationalVersion â€” never a literal. -->
+    <Version>0.9.0</Version>
+    <!-- MSB3277: harmless version conflict between .NET ref assemblies and Revit DLLs. -->
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
+
+    <!-- Override on the command line: dotnet build -p:RevitVersion=2027 -->
+    <RevitVersion Condition="'$(RevitVersion)' == ''">2026</RevitVersion>
+    <RevitInstallDir Condition="'$(RevitInstallDir)' == ''">C:\Program Files\Autodesk\Revit $(RevitVersion)</RevitInstallDir>
+
+    <!-- Where to drop the manifest + dll for the local Revit install -->
+    <RevitAddinFolder>$(APPDATA)\Autodesk\Revit\Addins\$(RevitVersion)</RevitAddinFolder>
+
+    <!-- Revit 2027+ requires .NET 10; Revit 2025-2026 uses .NET 8 -->
+    <TargetFramework Condition="$([MSBuild]::VersionGreaterThanOrEquals($(RevitVersion), 2027))">net10.0-windows</TargetFramework>
+    <TargetFramework Condition="$([MSBuild]::VersionLessThan($(RevitVersion), 2027))">net8.0-windows</TargetFramework>
+  </PropertyGroup>
+
+  <!-- On developer machines use the real Revit DLLs from the install folder.
+       On CI (no Revit installed) fall back to Nice3point reference assemblies
+       so the build succeeds without touching an actual Revit environment. -->
+  <ItemGroup Condition="Exists('$(RevitInstallDir)\RevitAPI.dll')">
+    <Reference Include="RevitAPI">
+      <HintPath>$(RevitInstallDir)\RevitAPI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="RevitAPIUI">
+      <HintPath>$(RevitInstallDir)\RevitAPIUI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(RevitInstallDir)\RevitAPI.dll') And '$(RevitVersion)' == '2025'">
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="2025.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="2025.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(RevitInstallDir)\RevitAPI.dll') And '$(RevitVersion)' == '2026'">
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="2026.4.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="2026.4.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="!Exists('$(RevitInstallDir)\RevitAPI.dll') And '$(RevitVersion)' == '2027'">
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="2027.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="2027.0.20">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>compile</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RevitMCP.Core\RevitMCP.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AutoAudit panel (P3-4). The WPF control needs the Evergreen WebView2
+         Runtime on the machine (ships with Windows 11 / Edge); when absent the
+         panel degrades to an "open in browser" fallback - never a crash. -->
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2903.40" />
+  </ItemGroup>
+
+  <!-- Stamp the actual git commit / branch / dirty-state and a build timestamp
+       into the assembly so /health reports what THIS dll really is, instead of a
+       hand-typed version that can outrank a build with fewer commands. Runs on
+       every build (the timestamp intentionally defeats incremental skips so a
+       rebuilt dll always re-stamps). git failures degrade to "unknown" â€” CI
+       without a checkout, or a source drop with no .git, still builds. -->
+  <Target Name="StampBuildInfo" BeforeTargets="CoreCompile;GetAssemblyAttributes">
+    <Exec Command="git -C &quot;$(MSBuildProjectDirectory)&quot; rev-parse --short=12 HEAD"
+          ConsoleToMSBuild="true" ContinueOnError="true" StandardOutputImportance="low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="_GitCommit" />
+    </Exec>
+    <Exec Command="git -C &quot;$(MSBuildProjectDirectory)&quot; rev-parse --abbrev-ref HEAD"
+          ConsoleToMSBuild="true" ContinueOnError="true" StandardOutputImportance="low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="_GitBranch" />
+    </Exec>
+    <Exec Command="git -C &quot;$(MSBuildProjectDirectory)&quot; status --porcelain --untracked-files=no"
+          ConsoleToMSBuild="true" ContinueOnError="true" StandardOutputImportance="low">
+      <Output TaskParameter="ConsoleOutput" PropertyName="_GitDirty" />
+    </Exec>
+    <PropertyGroup>
+      <_GitCommit Condition="'$(_GitCommit)' == ''">unknown</_GitCommit>
+      <_GitBranch Condition="'$(_GitBranch)' == ''">unknown</_GitBranch>
+      <_GitState Condition="'$(_GitDirty)' == ''">clean</_GitState>
+      <_GitState Condition="'$(_GitDirty)' != ''">dirty</_GitState>
+      <_BuildTimestampUtc>$([System.DateTime]::UtcNow.ToString("yyyy-MM-ddTHH:mm:ssZ"))</_BuildTimestampUtc>
+    </PropertyGroup>
+    <ItemGroup>
+      <AssemblyMetadata Include="GitCommit" Value="$(_GitCommit)" />
+      <AssemblyMetadata Include="GitBranch" Value="$(_GitBranch)" />
+      <AssemblyMetadata Include="GitState" Value="$(_GitState)" />
+      <AssemblyMetadata Include="BuildTimestampUtc" Value="$(_BuildTimestampUtc)" />
+    </ItemGroup>
+  </Target>
+
+  <!-- After build, copy the DLL + manifest into the per-user Revit Addins folder
+       so Revit picks it up on the next launch.  Disable with -p:DeployToRevit=false -->
+  <Target Name="DeployToRevitAddinsFolder" AfterTargets="Build"
+          Condition="'$(DeployToRevit)' != 'false'">
+    <MakeDir Directories="$(RevitAddinFolder)" />
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).dll"
+          DestinationFolder="$(RevitAddinFolder)" />
+    <!-- NEW: ship the extracted Core classlib alongside the addin -->
+    <Copy SourceFiles="$(TargetDir)RevitMCP.Core.dll"
+          DestinationFolder="$(RevitAddinFolder)" />
+    <Copy SourceFiles="$(TargetDir)RevitMCP.Core.pdb"
+          DestinationFolder="$(RevitAddinFolder)"
+          Condition="Exists('$(TargetDir)RevitMCP.Core.pdb')" />
+    <Copy SourceFiles="$(TargetDir)$(AssemblyName).pdb"
+          DestinationFolder="$(RevitAddinFolder)"
+          Condition="Exists('$(TargetDir)$(AssemblyName).pdb')" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\RevitMCPAddin.addin"
+          DestinationFolder="$(RevitAddinFolder)" />
+    <!-- AutoAudit panel: WebView2 managed assemblies + native loader.
+         WebView2Loader.dll must sit NEXT TO Microsoft.Web.WebView2.Core.dll
+         (the managed dll probes its own folder first). -->
+    <Copy SourceFiles="$(TargetDir)Microsoft.Web.WebView2.Core.dll"
+          DestinationFolder="$(RevitAddinFolder)"
+          Condition="Exists('$(TargetDir)Microsoft.Web.WebView2.Core.dll')" />
+    <Copy SourceFiles="$(TargetDir)Microsoft.Web.WebView2.Wpf.dll"
+          DestinationFolder="$(RevitAddinFolder)"
+          Condition="Exists('$(TargetDir)Microsoft.Web.WebView2.Wpf.dll')" />
+    <Copy SourceFiles="$(TargetDir)runtimes\win-x64\native\WebView2Loader.dll"
+          DestinationFolder="$(RevitAddinFolder)"
+          Condition="Exists('$(TargetDir)runtimes\win-x64\native\WebView2Loader.dll')" />
+    <Message Importance="high"
+             Text="Deployed RevitMCPAddin (+ RevitMCP.Core + WebView2) to $(RevitAddinFolder)" />
+  </Target>
+
+</Project>

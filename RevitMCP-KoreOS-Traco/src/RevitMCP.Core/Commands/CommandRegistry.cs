@@ -1,0 +1,211 @@
+using System.Collections.Generic;
+
+namespace RevitMCPAddin.Commands;
+
+public sealed class CommandRegistry
+{
+    private readonly Dictionary<string, IRevitCommand> _commands = new();
+
+    public void Register(IRevitCommand handler) => _commands[handler.Name] = handler;
+
+    public bool TryGet(string name, out IRevitCommand? handler) =>
+        _commands.TryGetValue(name, out handler);
+
+    public IEnumerable<string> Names => _commands.Keys;
+
+    /// <summary>Number of registered commands (the real capability surface).</summary>
+    public int Count => _commands.Count;
+
+    public IEnumerable<(string Name, bool IsReadOnly, string RiskLevel, string ExecutionKind)> Describe()
+    {
+        foreach (var kv in _commands)
+            yield return (kv.Key, kv.Value.IsReadOnly, kv.Value.RiskLevel,
+                          ((IRevitCommand)kv.Value).Execution.ToString());
+    }
+
+    public void RegisterDefaults()
+    {
+        // === Diagnostics ===
+        Register(new PingCommand());
+        Register(new GetVersionCommand());
+        Register(new GetDocumentInfoCommand());
+
+        // === Inspection / introspection ===
+        Register(new ListElementsCommand());
+        Register(new GetElementInfoCommand());
+        Register(new FindElementByUniqueIdCommand());
+        Register(new GetElementRoomsCommand());
+        Register(new FindElementsCommand());
+        Register(new QueryWhereCommand());
+        Register(new GetParameterCommand());
+        Register(new ListLevelsCommand());
+        Register(new ListWallTypesCommand());
+        Register(new ListFloorTypesCommand());
+        Register(new ListCategoriesCommand());
+        Register(new ListFamiliesCommand());
+        Register(new ListFamilyTypesCommand());
+        Register(new ListSheetsCommand());
+        Register(new ListRoomsCommand());
+        Register(new ListSpacesCommand());
+        Register(new ListMaterialsCommand());
+        Register(new CreateMaterialCommand());
+        Register(new ListPhasesCommand());
+        Register(new ListViewTemplatesCommand());
+        Register(new GetViewsCommand());
+        Register(new GetActiveViewCommand());
+        Register(new GetSelectedElementsCommand());
+        Register(new GetLinkedFilesCommand());
+        Register(new GetLinkedElementsCommand());
+        Register(new GetElementGeometryCommand());
+        Register(new GetViewImageCommand());
+        Register(new GetModelHealthCommand());
+        Register(new GetWarningsCommand());
+        Register(new GetTypeStructureCommand());
+        Register(new InspectPlanarFacesCommand());
+        Register(new SetFamilyOrientationCommand());
+        Register(new AttachWallTopCommand());
+        Register(new DetachWallTopCommand());
+        Register(new CreateProfileWallCommand());
+        Register(new AnalyzeWallRoofInterfaceCommand());
+        Register(new InspectScopeBoxesCommand());
+        Register(new CreateFramingMemberCommand());
+        Register(new CreateRoofTypeVariantCommand());
+        Register(new PlanPurlinRoofCommand());
+        Register(new ListOpenDocumentsCommand());
+        Register(new ActivateDocumentCommand());
+        Register(new CopyElementsFromDocumentCommand());
+        Register(new SaveDocumentCommand());
+        Register(new ListRecentDocumentsCommand());
+        Register(new OpenDocumentCommand());
+        Register(new NewProjectFromTemplateCommand());
+        Register(new ImportCadCommand());
+        Register(new PlaceImageInViewCommand());
+        Register(new InspectCadCommand());
+        Register(new CreateWallTypeVariantCommand());
+        Register(new SetViewCropCommand());
+        Register(new EditCurtainWallCommand());
+        Register(new SnapWallEndsCommand());
+        Register(new CreateRoomSeparatorsCommand());
+        Register(new MergeWallsCommand());
+        Register(new LinkPointCloudCommand());
+        Register(new InspectPointCloudCommand());
+        Register(new SetPointCloudDisplayCommand());
+        Register(new SamplePointCloudCommand());
+        Register(new CreateRoofEdgeSweepCommand());
+        Register(new PlaceCurveFamilyInstanceCommand());
+        Register(new CreateProfileFamilyCommand());
+        Register(new JoinGeometryCommand());
+        Register(new CreateFloorTypeVariantCommand());
+        Register(new GetWorksetsCommand());
+        Register(new GetScheduleDataCommand());
+        Register(new GetDoorsCommand());
+
+        // === Creation — architecture ===
+        Register(new CreateWallCommand());
+        Register(new CreateCurvedWallCommand());
+        Register(new CreateFloorCommand());
+        Register(new CreateStairCommand());
+        Register(new CreateRailingCommand());
+        Register(new ConfigureRailingTypeCommand());
+        Register(new CreateDirectShapeCommand());
+        Register(new CreateGableRoofCommand());
+        Register(new CreateLevelCommand());
+        Register(new CreateGridCommand());
+        Register(new CreateRoomCommand());
+        Register(new CreateColumnCommand());
+        Register(new CreateBeamCommand());
+        Register(new CreateCeilingCommand());
+        Register(new CreateOpeningInWallCommand());
+        Register(new PlaceFamilyInstanceCommand());
+
+        // === Creation — documentation ===
+        Register(new CreateSheetCommand());
+        Register(new PlaceViewOnSheetCommand());
+        Register(new CreateFloorPlanViewCommand());
+        Register(new CreateDraftingViewCommand());
+        Register(new CreateSectionViewCommand());
+        Register(new Create3DViewCommand());
+        Register(new CreatePerspectiveViewCommand());
+        Register(new CreateScheduleCommand());
+        Register(new TagElementCommand());
+        Register(new TagAllInViewCommand());
+        Register(new CreateAlignedDimensionCommand());
+        Register(new CreateSpotElevationCommand());
+        Register(new CreateTextNoteCommand());
+        Register(new CreateDetailLineCommand());
+        Register(new CreateFilledRegionCommand());
+
+        // === Family management ===
+        Register(new LoadFamilyCommand());
+        Register(new DuplicateFamilyTypeCommand());
+
+        // === Annotation — query ===
+        Register(new GetTagsInViewCommand());
+
+        // === Edit — parameters ===
+        Register(new SetParameterCommand());
+        Register(new SetParameterBatchCommand());
+        Register(new UpdateWhereCommand());
+        Register(new ImportParametersCommand());
+        Register(new RenameElementCommand());
+        Register(new CopyParametersCommand());
+        Register(new ChangeElementTypeCommand());
+        Register(new ApplyViewTemplateCommand());
+        Register(new ConfigureScheduleCommand());
+        Register(new SetLevelElevationCommand());
+        Register(new ExportViewPdfCommand());
+
+        // === Edit — transform ===
+        Register(new MoveElementCommand());
+        Register(new RotateElementCommand());
+        Register(new CopyElementCommand());
+        Register(new MirrorElementCommand());
+        Register(new ArrayLinearCommand());
+        Register(new DeleteElementsCommand());
+
+        // === Edit — grouping ===
+        Register(new GroupElementsCommand());
+        Register(new UngroupElementsCommand());
+
+        // === View manipulation ===
+        Register(new OpenViewCommand());
+        Register(new SetViewDetailLevelCommand());
+        Register(new FitDatumsToCropCommand());
+        Register(new GetAnnotationExtentsCommand());
+        Register(new SetCategoryVisibilityCommand());
+        Register(new HideElementsInViewCommand());
+        Register(new UnhideElementsInViewCommand());
+        Register(new IsolateElementsInViewCommand());
+        Register(new DuplicateViewCommand());
+        Register(new SetSectionBoxCommand());
+        Register(new SelectElementsCommand());
+        Register(new ZoomToElementsCommand());
+        Register(new ApplyViewFilterCommand());
+        Register(new ColorOverrideByParamCommand());
+
+        Register(new OverrideElementGraphicsCommand());
+
+        // === Coordination / clash ===
+        Register(new CheckClearanceCommand());
+
+        // === Spatial-QC pack (HTTP-only; spatial_* names, NOT exposed as MCP tools) ===
+        // Consumed programmatically by AutomatedSpatialQC over /mcp, not by LLM tool routing.
+        // Prefixed to namespace them apart from the curated MCP command surface.
+        Register(new GetRoomBoundaryCommand());
+        Register(new ClearanceEnvelopeCommand());
+        Register(new ClearanceEnvelopeBatchCommand());
+        Register(new RaycastHeadroomCommand());
+        Register(new GetWallsCommand());
+        Register(new GetStairsCommand());
+        Register(new GetPathsOfTravelCommand());
+        Register(new CreatePathOfTravelCommand());
+        Register(new CreateModelLineCommand());
+
+        // Reinforcement (rebar) - phase 1: inventory, template audit, circular walls
+        Register(new ListRebarTypesCommand());
+        Register(new GetRebarsCommand());
+        Register(new GetRebarHostInfoCommand());
+        Register(new AuditRebarTemplateCommand());
+        Register(new ReinforceCurvedWallCommand());
+    }
+}

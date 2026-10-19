@@ -1,0 +1,4502 @@
+{
+  "recordedDate": "2026-09-10",
+  "source": "Live read-only Revit MCP",
+  "note": "Snapshot, not current truth after manual edits. Numeric Double parameters and bounding boxes are Revit internal feet unless dataTypeId says otherwise.",
+  "results": [
+    {
+      "ok": true,
+      "data": {
+        "title": "teste mcp",
+        "pathName": "C:\\Users\\Mana02\\Desktop\\teste mcp.rvt",
+        "isWorkshared": false,
+        "isModified": true,
+        "projectName": "NOME PROJETO",
+        "projectNumber": "",
+        "projectAddress": "Insira aqui o endereço do projeto",
+        "projectStatus": "EXECUTIVO",
+        "organizationName": "",
+        "buildingName": "",
+        "author": "Autor",
+        "activeViewName": "{3D}",
+        "activeViewType": "ThreeD",
+        "displayUnitSystem": "METRIC"
+      },
+      "index": 0,
+      "command": "get_document_info"
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394065,
+        "name": "CZN 220 cm",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127ee11",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19393005,
+          "familyName": "_ARQPWR_MRM Bancada linear",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.02887139107611,
+            "y": 17.224409448818893,
+            "z": 0
+          },
+          "rotationRadians": 1.5707963267948966
+        },
+        "category": "Componentes de gabinete",
+        "categoryEnum": "OST_Casework",
+        "typeId": 19394040,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 17.06036745406821,
+            "y": 9.514435695538053,
+            "z": 2.6246719160104792
+          },
+          "max": {
+            "x": 19.02887139107611,
+            "y": 17.224409448818893,
+            "z": 3.2808398950131044
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19394040,
+            "valueString": "_ARQPWR_MRM Bancada linear: CZN 220 cm",
+            "referencedElementName": "CZN 220 cm"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19394040,
+            "valueString": "_ARQPWR_MRM Bancada linear",
+            "referencedElementName": "CZN 220 cm"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19394040,
+            "valueString": "CZN 220 cm",
+            "referencedElementName": "CZN 220 cm"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Saia frontal",
+            "parameterId": 19393998,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Rodamão posterior",
+            "parameterId": 19393999,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Rodamão direito",
+            "parameterId": 19394000,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Rodamão esquerdo",
+            "parameterId": 19394001,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Saia frontal",
+            "parameterId": 19394002,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Rodamão posterior",
+            "parameterId": 19394003,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Saia direita",
+            "parameterId": 19394004,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Saia esquerda",
+            "parameterId": 19394005,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Rodamão esquerdo",
+            "parameterId": 19394006,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Rodamão direito",
+            "parameterId": 19394007,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Saia direita",
+            "parameterId": 19394008,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Saia esquerda",
+            "parameterId": 19394009,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura - Saia posterior",
+            "parameterId": 19394010,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.32808398950131235,
+            "valueString": "0,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Saia posterior",
+            "parameterId": 19394011,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19396967,
+        "name": "MDF Branco",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127f967",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19395307,
+          "familyName": "_ARQPWR_MRC Armário básico",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.028871391076112,
+            "y": 17.224409448818903,
+            "z": 9.325873406851269e-15
+          },
+          "rotationRadians": 4.7123889803846835
+        },
+        "category": "Componentes de gabinete",
+        "categoryEnum": "OST_Casework",
+        "typeId": 19396931,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 17.22440944881886,
+            "y": 9.514435695538058,
+            "z": 9.325873406851223e-15
+          },
+          "max": {
+            "x": 19.028871391076116,
+            "y": 17.78635505800002,
+            "z": 2.624671916010833
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Profundidade",
+            "parameterId": -1010003,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 1.804461942257218,
+            "valueString": "0,55",
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19396931,
+            "valueString": "_ARQPWR_MRC Armário básico: MDF Branco",
+            "referencedElementName": "MDF Branco"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19396931,
+            "valueString": "_ARQPWR_MRC Armário básico",
+            "referencedElementName": "MDF Branco"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19396931,
+            "valueString": "MDF Branco",
+            "referencedElementName": "MDF Branco"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Largura",
+            "parameterId": -1001301,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 7.709973753280839,
+            "valueString": "2,35",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura",
+            "parameterId": -1001300,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 2.6246719160104988,
+            "valueString": "0,80",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Módulo máximo",
+            "parameterId": 19396908,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 1.968503937007874,
+            "valueString": "0,60",
+            "referencedElementName": null
+          },
+          {
+            "name": "1 módulo",
+            "parameterId": 19396913,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394313,
+        "name": "Refrigerador Side by Side",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127ef09",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 4170682,
+          "familyName": "Refrigerador_Electrolux_Side_by_Side_Frost_Free_504L_14781",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": 1,
+            "y": -1.2246467991473532e-16,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": -1.2246467991473532e-16,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 16.46981627296587,
+            "y": 5.413385826771654,
+            "z": 0
+          },
+          "rotationRadians": 4.7123889803846835
+        },
+        "category": "Equipamento especial",
+        "categoryEnum": "OST_SpecialityEquipment",
+        "typeId": 4173374,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 15.10826771653542,
+            "y": 3.772965879265081,
+            "z": -1.9095836023552692e-14
+          },
+          "max": {
+            "x": 18.864829396325465,
+            "y": 6.7093175853018385,
+            "z": 5.872703412073402
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4173374,
+            "valueString": "Refrigerador_Electrolux_Side_by_Side_Frost_Free_504L_14781: Refrigerador Side by Side",
+            "referencedElementName": "Refrigerador Side by Side"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4173374,
+            "valueString": "Refrigerador_Electrolux_Side_by_Side_Frost_Free_504L_14781",
+            "referencedElementName": "Refrigerador Side by Side"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4173374,
+            "valueString": "Refrigerador Side by Side",
+            "referencedElementName": "Refrigerador Side by Side"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394314,
+        "name": "WALNUT",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127ef0a",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 4701512,
+          "familyName": "Cadeira MS Wood Elle",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": -1.2246467991473532e-16,
+            "y": -1,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": -1,
+            "y": 1.2246467991473532e-16,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 12.79527559055118,
+            "y": 3.444881889763779,
+            "z": 0
+          },
+          "rotationRadians": 3.141592653589793
+        },
+        "category": "Mobiliário",
+        "categoryEnum": "OST_Furniture",
+        "typeId": 2912727,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 12.04397833191616,
+            "y": 2.632307506379883,
+            "z": -0.0006033657454587171
+          },
+          "max": {
+            "x": 13.547299196668082,
+            "y": 4.300432654910091,
+            "z": 2.7260738626092618
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "Cadeira MS Wood Elle: WALNUT",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "Cadeira MS Wood Elle",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "WALNUT",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394315,
+        "name": "WALNUT",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127ef0b",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 4701512,
+          "familyName": "Cadeira MS Wood Elle",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": 2.4492935982947064e-16,
+            "y": 1,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 1,
+            "y": -2.4492935982947064e-16,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 12.79527559055118,
+            "y": 9.678477690288714,
+            "z": 0
+          },
+          "rotationRadians": 6.28318530717958
+        },
+        "category": "Mobiliário",
+        "categoryEnum": "OST_Furniture",
+        "typeId": 2912727,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 12.043251984434278,
+            "y": 8.8229269251424,
+            "z": -0.0006033657454587171
+          },
+          "max": {
+            "x": 13.5465728491862,
+            "y": 10.491052073672611,
+            "z": 2.7260738626092618
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "Cadeira MS Wood Elle: WALNUT",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "Cadeira MS Wood Elle",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2912727,
+            "valueString": "WALNUT",
+            "referencedElementName": "WALNUT"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394316,
+        "name": "Tramontina TDC - 94722221",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127ef0c",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 4251270,
+          "familyName": "Cooktop Tramontina",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 18.044619422572175,
+            "y": 10.990813648293962,
+            "z": 2.9527559055118107
+          },
+          "rotationRadians": 1.5707963267948966
+        },
+        "category": "Equipamento especial",
+        "categoryEnum": "OST_SpecialityEquipment",
+        "typeId": 4251630,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 17.47047244094487,
+            "y": 9.514435695538058,
+            "z": 2.782152230971128
+          },
+          "max": {
+            "x": 18.61876640419948,
+            "y": 12.467191601049867,
+            "z": 2.966207349081365
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4251630,
+            "valueString": "Cooktop Tramontina: Tramontina TDC - 94722221",
+            "referencedElementName": "Tramontina TDC - 94722221"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4251630,
+            "valueString": "Cooktop Tramontina",
+            "referencedElementName": "Tramontina TDC - 94722221"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4251630,
+            "valueString": "Tramontina TDC - 94722221",
+            "referencedElementName": "Tramontina TDC - 94722221"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 2.9527559055118107,
+            "valueString": "0,90",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 2.9527559055118107,
+            "valueString": "0,90",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Tramontina Ref",
+            "parameterId": 4251265,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "Tramontina - 94722/221",
+            "valueString": "Tramontina - 94722/221",
+            "referencedElementName": null
+          },
+          {
+            "name": "Tramontina",
+            "parameterId": 4251266,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "Tramontina",
+            "valueString": "Tramontina",
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19397967,
+        "name": "6 mm - Sem bisotê",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127fd4f",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19397082,
+          "familyName": "_ARQPWR_VDR Espelho circular com moldura",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": 19389461,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.028871391076116,
+            "y": 19.685039370078737,
+            "z": 4.888451443569553
+          },
+          "rotationRadians": 4.188790204786384
+        },
+        "category": "Componentes de gabinete",
+        "categoryEnum": "OST_Casework",
+        "typeId": 19397938,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 18.930446194225723,
+            "y": 18.45472440944881,
+            "z": 3.6581364829396286
+          },
+          "max": {
+            "x": 19.028871391076116,
+            "y": 20.91535433070866,
+            "z": 6.118766404199484
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19397938,
+            "valueString": "_ARQPWR_VDR Espelho circular com moldura: 6 mm - Sem bisotê",
+            "referencedElementName": "6 mm - Sem bisotê"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19397938,
+            "valueString": "_ARQPWR_VDR Espelho circular com moldura",
+            "referencedElementName": "6 mm - Sem bisotê"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19397938,
+            "valueString": "6 mm - Sem bisotê",
+            "referencedElementName": "6 mm - Sem bisotê"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19399925,
+        "name": "L.510.17_Branco Gelo GE17",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-012804f5",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19397981,
+          "familyName": "Deca_Lavatorio Vogue Plus_L-510_Coluna Suspensa",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": 19389461,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.028871391076123,
+            "y": 19.685039370078737,
+            "z": 0.1312335958005244
+          },
+          "rotationRadians": 4.188790204786384
+        },
+        "category": "Peças hidrossanitárias",
+        "categoryEnum": "OST_PlumbingFixtures",
+        "typeId": 19399894,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 17.86386061400853,
+            "y": 18.947912186344045,
+            "z": 0.13123359580050828
+          },
+          "max": {
+            "x": 19.028871391076116,
+            "y": 20.41807459792855,
+            "z": 2.755957132636275
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19399894,
+            "valueString": "Deca_Lavatorio Vogue Plus_L-510_Coluna Suspensa: L.510.17_Branco Gelo GE17",
+            "referencedElementName": "L.510.17_Branco Gelo GE17"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19399894,
+            "valueString": "Deca_Lavatorio Vogue Plus_L-510_Coluna Suspensa",
+            "referencedElementName": "L.510.17_Branco Gelo GE17"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19399894,
+            "valueString": "L.510.17_Branco Gelo GE17",
+            "referencedElementName": "L.510.17_Branco Gelo GE17"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ñao Coluna",
+            "parameterId": 19399888,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19399942,
+        "name": "OC_ToalheiroSimples",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-01280506",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 4296104,
+          "familyName": "OC_ToalheiroSimples",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": 19389464,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+          },
+          "handOrientation": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 16.896325459317584,
+            "y": 17.71653543307086,
+            "z": 3.9041994750656164
+          },
+          "rotationRadians": 1.5707963267948966
+        },
+        "category": "Modelos genéricos",
+        "categoryEnum": "OST_GenericModel",
+        "typeId": 4296127,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 16.38779527559055,
+            "y": 17.71653543307086,
+            "z": 3.864829396325458
+          },
+          "max": {
+            "x": 17.404855643044616,
+            "y": 17.903543307086608,
+            "z": 3.9370078740157535
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4296127,
+            "valueString": "OC_ToalheiroSimples: OC_ToalheiroSimples",
+            "referencedElementName": "OC_ToalheiroSimples"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4296127,
+            "valueString": "OC_ToalheiroSimples",
+            "referencedElementName": "OC_ToalheiroSimples"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 4296127,
+            "valueString": "OC_ToalheiroSimples",
+            "referencedElementName": "OC_ToalheiroSimples"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Tipo de Abertura",
+            "parameterId": 11649071,
+            "isShared": true,
+            "sharedGuid": "5abe02f8-e18a-401d-a2f9-94c763219580",
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "COMP.",
+            "parameterId": 18595889,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:number-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19400983,
+        "name": "220 x 210 cm",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-01280917",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19399963,
+          "familyName": "_ARQPWR_VDR Box com porta deslizante",
+          "placementType": "OneLevelBased",
+          "isInPlace": false,
+          "hostId": null,
+          "hostClassName": null,
+          "facingOrientation": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "canFlipFacing": true,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 15.419947506561678,
+            "y": 21.981627296587924,
+            "z": -0.03280839895013123
+          },
+          "rotationRadians": 0
+        },
+        "category": "Componentes de gabinete",
+        "categoryEnum": "OST_Casework",
+        "typeId": 19400968,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 11.811023622047243,
+            "y": 21.940616797900265,
+            "z": -0.03280839895013123
+          },
+          "max": {
+            "x": 19.028871391076116,
+            "y": 22.883891020489127,
+            "z": 6.955380577427825
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19400968,
+            "valueString": "_ARQPWR_VDR Box com porta deslizante: 220 x 210 cm",
+            "referencedElementName": "220 x 210 cm"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19400968,
+            "valueString": "_ARQPWR_VDR Box com porta deslizante",
+            "referencedElementName": "220 x 210 cm"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19400968,
+            "valueString": "220 x 210 cm",
+            "referencedElementName": "220 x 210 cm"
+          },
+          {
+            "name": "Move com elementos próximos",
+            "parameterId": -1001370,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Deslocamento do hospedeiro",
+            "parameterId": -1001364,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": -0.03280839895013123,
+            "valueString": "-0,01",
+            "referencedElementName": null
+          },
+          {
+            "name": "Elevação do nível",
+            "parameterId": -1001360,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": -0.03280839895013123,
+            "valueString": "-0,01",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394309,
+        "name": "1967.C_Cromado CR10",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127ef05",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 19387775,
+          "familyName": "Deca_Chuveiro Aspen_1967-C_Com desviador e Ducha manual",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": 19389461,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.028871391076937,
+            "y": 23.45800524934383,
+            "z": 6.856955380577427
+          },
+          "rotationRadians": 4.188790204786384
+        },
+        "category": "Peças hidrossanitárias",
+        "categoryEnum": "OST_PlumbingFixtures",
+        "typeId": 19389110,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 18.289809577053813,
+            "y": 23.35342511559633,
+            "z": 2.918885912756946
+          },
+          "max": {
+            "x": 19.028871930231972,
+            "y": 23.874411665466496,
+            "z": 6.947779658009107
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19389110,
+            "valueString": "Deca_Chuveiro Aspen_1967-C_Com desviador e Ducha manual: 1967.C_Cromado CR10",
+            "referencedElementName": "1967.C_Cromado CR10"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19389110,
+            "valueString": "Deca_Chuveiro Aspen_1967-C_Com desviador e Ducha manual",
+            "referencedElementName": "1967.C_Cromado CR10"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 19389110,
+            "valueString": "1967.C_Cromado CR10",
+            "referencedElementName": "1967.C_Cromado CR10"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19397980,
+        "name": "4993.C93.CHU_Cromado C",
+        "uniqueId": "74a2e574-7dbb-4068-a80f-a89bbd692d33-0127fd5c",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 813029,
+          "familyName": "Deca_Acabamento Monocomando Chuveiro ContemporÔnea_4993.C93.CHU",
+          "placementType": "WorkPlaneBased",
+          "isInPlace": false,
+          "hostId": 19389461,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": false,
+          "canFlipHand": false,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.028871391076326,
+            "y": 24.27821522309711,
+            "z": 3.576115485564304
+          },
+          "rotationRadians": 4.188790204786384
+        },
+        "category": "Peças hidrossanitárias",
+        "categoryEnum": "OST_PlumbingFixtures",
+        "typeId": 814196,
+        "levelId": -1,
+        "boundingBox": {
+          "min": {
+            "x": 18.782808398950127,
+            "y": 24.064960629921213,
+            "z": 3.338090551180958
+          },
+          "max": {
+            "x": 19.028871391076116,
+            "y": 24.491469816272925,
+            "z": 3.789370078740106
+          }
+        },
+        "parameters": [
+          {
+            "name": "Tipo de sistema",
+            "parameterId": -1140334,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Nome do sistema",
+            "parameterId": -1140324,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 814196,
+            "valueString": "Deca_Acabamento Monocomando Chuveiro ContemporÔnea_4993.C93.CHU: 4993.C93.CHU_Cromado C",
+            "referencedElementName": "4993.C93.CHU_Cromado C"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 814196,
+            "valueString": "Deca_Acabamento Monocomando Chuveiro ContemporÔnea_4993.C93.CHU",
+            "referencedElementName": "4993.C93.CHU_Cromado C"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 814196,
+            "valueString": "4993.C93.CHU_Cromado C",
+            "referencedElementName": "4993.C93.CHU_Cromado C"
+          },
+          {
+            "name": "Nível de tabela",
+            "parameterId": -1001365,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19389484,
+        "name": ".ACABAMENTO_Porcelanato 80x80 cm",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127dc2c",
+        "className": "Floor",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": null,
+        "category": "Pisos",
+        "categoryEnum": "OST_Floors",
+        "typeId": 18691565,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 11.811023622047243,
+            "y": 17.716535433070867,
+            "z": -0.1968503937007874
+          },
+          "max": {
+            "x": 19.028871391076112,
+            "y": 25.59055118110236,
+            "z": -0.03280839895013123
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 18691565,
+            "valueString": "Piso: .ACABAMENTO_Porcelanato 80x80 cm",
+            "referencedElementName": ".ACABAMENTO_Porcelanato 80x80 cm"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 18691565,
+            "valueString": "Piso",
+            "referencedElementName": ".ACABAMENTO_Porcelanato 80x80 cm"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 18691565,
+            "valueString": ".ACABAMENTO_Porcelanato 80x80 cm",
+            "referencedElementName": ".ACABAMENTO_Porcelanato 80x80 cm"
+          },
+          {
+            "name": "Estrutural",
+            "parameterId": -1001954,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001952,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Altura do deslocamento do nível",
+            "parameterId": -1001951,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": -0.03280839895013123,
+            "valueString": "-0,01",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Delimitação de ambientes",
+            "parameterId": -1001007,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "unidade por metro",
+            "parameterId": 19365050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI01",
+            "parameterId": 19365052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI02",
+            "parameterId": 19365054,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI03",
+            "parameterId": 19365056,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI04",
+            "parameterId": 19365058,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Area",
+            "parameterId": 19365060,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:number-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19394218,
+        "name": ".ACABAMENTO_Granito São Gabriel",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127eeaa",
+        "className": "Floor",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": null,
+        "category": "Pisos",
+        "categoryEnum": "OST_Floors",
+        "typeId": 2702597,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 12.393372703412071,
+            "y": 17.224409448818896,
+            "z": -0.09842519685039369
+          },
+          "max": {
+            "x": 15.16568241469816,
+            "y": 17.716535433070867,
+            "z": 0
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2702597,
+            "valueString": "Piso: .ACABAMENTO_Granito São Gabriel",
+            "referencedElementName": ".ACABAMENTO_Granito São Gabriel"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2702597,
+            "valueString": "Piso",
+            "referencedElementName": ".ACABAMENTO_Granito São Gabriel"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 2702597,
+            "valueString": ".ACABAMENTO_Granito São Gabriel",
+            "referencedElementName": ".ACABAMENTO_Granito São Gabriel"
+          },
+          {
+            "name": "Estrutural",
+            "parameterId": -1001954,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "Não",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001952,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Altura do deslocamento do nível",
+            "parameterId": -1001951,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0,
+            "valueString": "0,00",
+            "referencedElementName": null
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Delimitação de ambientes",
+            "parameterId": -1001007,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.bool-1.0.0",
+            "storageType": "Integer",
+            "isReadOnly": false,
+            "value": 1,
+            "valueString": "Sim",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "unidade por metro",
+            "parameterId": 19365050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI01",
+            "parameterId": 19365052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI02",
+            "parameterId": 19365054,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI03",
+            "parameterId": 19365056,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "PI04",
+            "parameterId": 19365058,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Area",
+            "parameterId": 19365060,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:number-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19389574,
+        "name": "120x120",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127dc86",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 10567963,
+          "familyName": "OC_Janela Veneziana de Correr 3 Folhas",
+          "placementType": "OneLevelBasedHosted",
+          "isInPlace": false,
+          "hostId": 19389463,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": true,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 0.32808398950131235,
+            "y": 6.561679790026247,
+            "z": 2.9527559055118107
+          },
+          "rotationRadians": 4.7123889803846835
+        },
+        "category": "Janelas",
+        "categoryEnum": "OST_Windows",
+        "typeId": 5553122,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": -0.24342859173649095,
+            "y": 4.4947506561680015,
+            "z": 2.887139107611437
+          },
+          "max": {
+            "x": 1.7965798085377938,
+            "y": 8.628608923884553,
+            "z": 6.955380577427849
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas: 120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Altura da extremidade",
+            "parameterId": -1001362,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 6.889763779527559,
+            "valueString": "2,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura do peitoril",
+            "parameterId": -1001361,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 2.9527559055118107,
+            "valueString": "0,90",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "13",
+            "valueString": "13",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Offset Pingadeira",
+            "parameterId": 5553047,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.06561679790026247,
+            "valueString": "0,02",
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19389582,
+        "name": "120x120",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127dc8e",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 10567963,
+          "familyName": "OC_Janela Veneziana de Correr 3 Folhas",
+          "placementType": "OneLevelBasedHosted",
+          "isInPlace": false,
+          "hostId": 19389463,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "canFlipFacing": true,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 0.32808398950131235,
+            "y": 20.99737532808399,
+            "z": 2.9527559055118107
+          },
+          "rotationRadians": 4.7123889803846835
+        },
+        "category": "Janelas",
+        "categoryEnum": "OST_Windows",
+        "typeId": 5553122,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": -0.24342859173649095,
+            "y": 18.930446194225745,
+            "z": 2.887139107611437
+          },
+          "max": {
+            "x": 1.7965798085377938,
+            "y": 23.064304461942296,
+            "z": 6.955380577427849
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas: 120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Altura da extremidade",
+            "parameterId": -1001362,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 6.889763779527559,
+            "valueString": "2,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura do peitoril",
+            "parameterId": -1001361,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 2.9527559055118107,
+            "valueString": "0,90",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "14",
+            "valueString": "14",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Offset Pingadeira",
+            "parameterId": 5553047,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.06561679790026247,
+            "valueString": "0,02",
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19389584,
+        "name": "120x120",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127dc90",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 10567963,
+          "familyName": "OC_Janela Veneziana de Correr 3 Folhas",
+          "placementType": "OneLevelBasedHosted",
+          "isInPlace": false,
+          "hostId": 19389461,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          },
+          "canFlipFacing": true,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 19.35695538057743,
+            "y": 11.811023622047243,
+            "z": 3.608923884514436
+          },
+          "rotationRadians": 1.5707963267948966
+        },
+        "category": "Janelas",
+        "categoryEnum": "OST_Windows",
+        "typeId": 5553122,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 17.888459561540945,
+            "y": 9.744094488188937,
+            "z": 3.543307086614062
+          },
+          "max": {
+            "x": 19.92846796181523,
+            "y": 13.877952755905488,
+            "z": 7.611548556430475
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas: 120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "OC_Janela Veneziana de Correr 3 Folhas",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5553122,
+            "valueString": "120x120",
+            "referencedElementName": "120x120"
+          },
+          {
+            "name": "Altura da extremidade",
+            "parameterId": -1001362,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 7.545931758530184,
+            "valueString": "2,30",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura do peitoril",
+            "parameterId": -1001361,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 3.608923884514436,
+            "valueString": "1,10",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "15",
+            "valueString": "15",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Offset Pingadeira",
+            "parameterId": 5553047,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.06561679790026247,
+            "valueString": "0,02",
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "command": "get_element_info",
+      "ok": true,
+      "data": {
+        "id": 19389586,
+        "name": "60x60 cm",
+        "uniqueId": "14445dd9-ab79-490f-9b40-1b52a0cf750e-0127dc92",
+        "className": "FamilyInstance",
+        "isElementType": false,
+        "boundingBoxUnits": "feet",
+        "parameterValueConvention": "Double values use Revit internal units; use dataTypeId and valueString to interpret them.",
+        "familyPlacement": {
+          "familyId": 10701038,
+          "familyName": "OC_Janela_Maxim-Ar",
+          "placementType": "OneLevelBasedHosted",
+          "isInPlace": false,
+          "hostId": 19389462,
+          "hostClassName": "Wall",
+          "facingOrientation": {
+            "x": 0,
+            "y": -1,
+            "z": 0
+          },
+          "handOrientation": {
+            "x": -1,
+            "y": 0,
+            "z": 0
+          },
+          "canFlipFacing": true,
+          "canFlipHand": true,
+          "facingFlipped": false,
+          "handFlipped": false,
+          "insertionPointFeet": {
+            "x": 15.748031496062989,
+            "y": 25.91863517060367,
+            "z": 5.2493438320209975
+          },
+          "rotationRadians": 3.141592653589793
+        },
+        "category": "Janelas",
+        "categoryEnum": "OST_Windows",
+        "typeId": 5571366,
+        "levelId": 3711007,
+        "boundingBox": {
+          "min": {
+            "x": 14.66535433070868,
+            "y": 22.110232053184635,
+            "z": -0.0069367543278859856
+          },
+          "max": {
+            "x": 16.83070866141735,
+            "y": 34.62392592137572,
+            "z": 7.23425196850372
+          }
+        },
+        "parameters": [
+          {
+            "name": "Fase demolida",
+            "parameterId": -1012101,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": -1,
+            "valueString": "Nenhum",
+            "referencedElementName": null
+          },
+          {
+            "name": "Fase criada",
+            "parameterId": -1012100,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 86961,
+            "valueString": "Construção nova",
+            "referencedElementName": "Construção nova"
+          },
+          {
+            "name": "Comentários",
+            "parameterId": -1010106,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Família e tipo",
+            "parameterId": -1002052,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5571366,
+            "valueString": "OC_Janela_Maxim-Ar: 60x60 cm",
+            "referencedElementName": "60x60 cm"
+          },
+          {
+            "name": "Família",
+            "parameterId": -1002051,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5571366,
+            "valueString": "OC_Janela_Maxim-Ar",
+            "referencedElementName": "60x60 cm"
+          },
+          {
+            "name": "Tipo",
+            "parameterId": -1002050,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 5571366,
+            "valueString": "60x60 cm",
+            "referencedElementName": "60x60 cm"
+          },
+          {
+            "name": "Altura da extremidade",
+            "parameterId": -1001362,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 7.217847769028872,
+            "valueString": "2,20",
+            "referencedElementName": null
+          },
+          {
+            "name": "Altura do peitoril",
+            "parameterId": -1001361,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.1",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 5.2493438320209975,
+            "valueString": "1,60",
+            "referencedElementName": null
+          },
+          {
+            "name": "Nível",
+            "parameterId": -1001352,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "",
+            "storageType": "ElementId",
+            "isReadOnly": false,
+            "value": 3711007,
+            "valueString": "N1-AC",
+            "referencedElementName": "N1-AC"
+          },
+          {
+            "name": "Marca",
+            "parameterId": -1001203,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": "16",
+            "valueString": "16",
+            "referencedElementName": null
+          },
+          {
+            "name": "Ambiente",
+            "parameterId": 4018083,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          },
+          {
+            "name": "Espessura da Parede",
+            "parameterId": 5571323,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.6561679790026247,
+            "valueString": "0,20",
+            "referencedElementName": null
+          },
+          {
+            "name": "Offset Pingadeira",
+            "parameterId": 5571324,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec.aec:length-2.0.0",
+            "storageType": "Double",
+            "isReadOnly": false,
+            "value": 0.0656167979002627,
+            "valueString": "0,02",
+            "referencedElementName": null
+          },
+          {
+            "name": "Local de Colocação",
+            "parameterId": 16680738,
+            "isShared": false,
+            "sharedGuid": null,
+            "dataTypeId": "autodesk.spec:spec.string-2.0.0",
+            "storageType": "String",
+            "isReadOnly": false,
+            "value": null,
+            "valueString": null,
+            "referencedElementName": null
+          }
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "total": 34,
+        "count": 34,
+        "offset": 0,
+        "hasMore": false,
+        "nextOffset": null,
+        "warnings": [
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              3042881,
+              5632812
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              3638103,
+              9250607
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              3953998,
+              5632810
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              5553124,
+              9345287
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              5632808,
+              9367846
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              12479888,
+              12482254
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              12483800,
+              12487184
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              12491749,
+              12495779
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14967096,
+              14967098
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14969204,
+              14969206
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14971528,
+              14971530
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14973762,
+              14973764
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14975992,
+              14975994
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14980457,
+              14980459
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14983120,
+              14983122
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14988031,
+              14988033
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14990234,
+              14990236
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14990238,
+              14990240
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14992587,
+              14992589
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14994923,
+              14994925
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14997128,
+              14997130
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14999464,
+              14999466
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              15001594,
+              15001596
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              15004123,
+              15004125
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              15006355,
+              15006357
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              18639595,
+              18684200
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14444849,
+              15073025,
+              15073027
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14985738,
+              14985740,
+              14985742
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              14978223,
+              14978225,
+              14978227,
+              14978229
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              15081087,
+              15081089,
+              15081091,
+              15081093
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              15081095,
+              15081097,
+              15081099,
+              15081101
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              12478278,
+              12478280,
+              12494175,
+              12494177,
+              12494179,
+              13255419
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "6e1efefe-c8e0-483d-8482-150b9f1da21a",
+            "description": "Os elementos têm valores \"Marca de tipo\" duplicados.",
+            "severity": "Warning",
+            "elementIds": [
+              12484784,
+              12484786,
+              12491747,
+              12491751,
+              12491753,
+              12491755
+            ],
+            "additionalElementIds": []
+          },
+          {
+            "failureId": "8695a52f-2a88-4ca2-bedc-3676d5857af6",
+            "description": "Pisos realçadas se sobrepõem.",
+            "severity": "Warning",
+            "elementIds": [
+              19389468,
+              19389484
+            ],
+            "additionalElementIds": []
+          }
+        ]
+      },
+      "index": 19,
+      "command": "get_warnings"
+    }
+  ]
+}

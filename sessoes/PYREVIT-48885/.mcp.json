@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "pyrevit-48885": {
+      "command": "C:\\Users\\toshi\\AppData\\Local\\Microsoft\\WinGet\\Packages\\astral-sh.uv_Microsoft.Winget.Source_8wekyb3d8bbwe\\uv.exe",
+      "args": [
+        "run",
+        "--directory",
+        "C:\\Users\\toshi\\revit-mcp-server",
+        "main.py"
+      ],
+      "env": {
+        "REVIT_PORT": "48885"
+      }
+    }
+  }
+}

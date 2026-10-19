@@ -1,0 +1,352 @@
+{
+  "_comment": "Ford dealership pilot traced from C:/Users/Mana02/Downloads/teste.dwg (linked, unit m, centered). Facade images from the user (11/09): glass skin floor-to-top 6.00 m (2.80+0.35+1.65+1.20), interior floor 0.45 above the sidewalk, marquee over the west entrance, service block with ACM fascia and roll-up gate. Other heights are assumptions.",
+  "documentTitle": "teste dwg",
+  "cadFile": "teste.dwg",
+  "levelName": "N1-AC",
+  "bbox": {
+    "minX": -25,
+    "minY": -6,
+    "maxX": 60,
+    "maxY": 56
+  },
+  "building": {
+    "minX": -17.2,
+    "minY": 18.5,
+    "maxX": 13.3,
+    "maxY": 53.3
+  },
+  "groups": [
+    {
+      "name": "walls",
+      "layers": [
+        "A-WALL",
+        "AR-ALV",
+        "0"
+      ],
+      "evidenceLayers": [
+        "A-DOOR",
+        "A-DOOR-FRAM",
+        "A-DOOR-GLAZ"
+      ],
+      "options": {
+        "snapThicknesses": [
+          0.1,
+          0.15,
+          0.2,
+          0.25
+        ],
+        "snapTolerance": 0.03,
+        "minWallLength": 1.0,
+        "excludeRegions": [
+          {
+            "minX": -25,
+            "minY": 20,
+            "maxX": -17.3,
+            "maxY": 50,
+            "_why": "support parking stalls drawn with double lines"
+          },
+          {
+            "minX": 22,
+            "minY": 30,
+            "maxX": 43,
+            "maxY": 45,
+            "_why": "workshop bay dividers, unclear if walls"
+          },
+          {
+            "minX": 35,
+            "minY": -4,
+            "maxX": 46,
+            "maxY": 4,
+            "_why": "small booth at the SE corner, unclear"
+          },
+          {
+            "minX": 30,
+            "minY": 18,
+            "maxX": 52,
+            "maxY": 21,
+            "_why": "yard divider drawn mostly as a single line"
+          }
+        ]
+      },
+      "rules": [
+        {
+          "name": "balcao",
+          "region": {
+            "minX": 7,
+            "minY": 20,
+            "maxX": 8,
+            "maxY": 30
+          },
+          "wallTypeName": ".ALVENARIA_15CM",
+          "height": 1.1
+        },
+        {
+          "name": "muro",
+          "thickness": [
+            0.15
+          ],
+          "outsideBuilding": true,
+          "wallTypeName": ".ALVENARIA_15CM",
+          "height": 2.5,
+          "baseOffset": -0.45
+        },
+        {
+          "name": "envoltoria-leste",
+          "thickness": [
+            0.25
+          ],
+          "region": {
+            "minX": 12.6,
+            "minY": 18,
+            "maxX": 13.2,
+            "maxY": 53.5
+          },
+          "wallTypeName": ".ALVENARIA_25CM",
+          "height": 6.0
+        },
+        {
+          "name": "envoltoria-norte",
+          "thickness": [
+            0.25
+          ],
+          "region": {
+            "minX": -17,
+            "minY": 52.5,
+            "maxX": 13,
+            "maxY": 53.2
+          },
+          "wallTypeName": ".ALVENARIA_25CM",
+          "height": 6.0
+        },
+        {
+          "name": "interna-25",
+          "thickness": [
+            0.25
+          ],
+          "wallTypeName": ".ALVENARIA_25CM",
+          "height": 3.0
+        },
+        {
+          "name": "interna-20",
+          "thickness": [
+            0.2
+          ],
+          "wallTypeName": ".ALVENARIA_20CM",
+          "height": 3.0
+        },
+        {
+          "name": "interna-15",
+          "thickness": [
+            0.15
+          ],
+          "wallTypeName": ".ALVENARIA_15CM",
+          "height": 3.0
+        },
+        {
+          "name": "drywall-10",
+          "thickness": [
+            0.1
+          ],
+          "wallTypeName": ".GESSO_10cm (ST+ST)",
+          "height": 3.0
+        }
+      ],
+      "extraWalls": [
+        {
+          "id": "X1",
+          "start": [
+            12.8755,
+            33.3505
+          ],
+          "end": [
+            12.8755,
+            38.3644
+          ],
+          "thickness": 0.25,
+          "rule": "envoltoria-leste",
+          "_why": "east facade stretch whose outer face line is missing in the DWG; inner face is continuous"
+        }
+      ]
+    },
+    {
+      "name": "glass",
+      "layers": [
+        "A-GLAZ-CURT"
+      ],
+      "options": {
+        "minThickness": 0.01,
+        "maxThickness": 0.06,
+        "maxOpening": 0.3,
+        "minOpening": 0.6,
+        "minWallLength": 1.0,
+        "_why": "panes stop at every column (gaps ~0.5 m): one glass run per bay"
+      },
+      "rules": [
+        {
+          "name": "vidro-interno",
+          "region": {
+            "minX": -5,
+            "minY": 47,
+            "maxX": 1,
+            "maxY": 53
+          },
+          "wallTypeName": ".VIDRAÇA_E=200 cm",
+          "height": 3.0
+        },
+        {
+          "name": "fachada-vidro",
+          "wallTypeName": ".VIDRAÇA_E=200 cm",
+          "height": 6.0,
+          "bands": [
+            [
+              0,
+              2.8
+            ],
+            [
+              3.15,
+              6.0
+            ]
+          ],
+          "_why": "transom beam 2.80-3.15 seen on both elevations"
+        }
+      ]
+    },
+    {
+      "name": "single",
+      "kind": "single",
+      "fromGroup": "walls",
+      "minLength": 1.0,
+      "regions": [
+        {
+          "minX": 0.4,
+          "minY": 38.2,
+          "maxX": 9.3,
+          "maxY": 48.2,
+          "_why": "offices, TI, copa, WC fem"
+        },
+        {
+          "minX": 9.1,
+          "minY": 38.3,
+          "maxX": 12.8,
+          "maxY": 43.3,
+          "_why": "vestiario/WC masc"
+        }
+      ],
+      "rules": [
+        {
+          "name": "cabine-wc",
+          "region": {
+            "minX": 10.5,
+            "minY": 38.3,
+            "maxX": 12.8,
+            "maxY": 43.3
+          },
+          "maxLength": 1.8,
+          "wallTypeName": "DIVISÓRIA GRANITO",
+          "height": 1.8
+        },
+        {
+          "name": "cabine-wc-fem",
+          "region": {
+            "minX": 6.9,
+            "minY": 45.4,
+            "maxX": 9.0,
+            "maxY": 48.2
+          },
+          "maxLength": 1.8,
+          "wallTypeName": "DIVISÓRIA GRANITO",
+          "height": 1.8
+        },
+        {
+          "name": "divisoria-leve",
+          "wallTypeName": ".GESSO_10cm (ST+ST)",
+          "height": 3.0
+        }
+      ]
+    }
+  ],
+  "groundOffset": -0.45,
+  "doors": {
+    "layers": [
+      "AR-CONST",
+      "Econorte SJC -BASE  R02$0$AR-POR",
+      "A-DOOR"
+    ],
+    "familyName": "OC_Porta de Abrir",
+    "typesByMaxWidth": [
+      [
+        0.75,
+        "70x210cm_Maçaneta Zen Blend"
+      ],
+      [
+        0.85,
+        "80x210cm_Maçaneta Zen Blend"
+      ],
+      [
+        9,
+        "90x210cm_Puxador Vertical"
+      ]
+    ],
+    "minHostHeight": 2.3,
+    "excludeHostTypes": [
+      ".VIDRAÇA_E=200 cm"
+    ]
+  },
+  "levels": [
+    {
+      "name": "N1-COB",
+      "elevation": 6.0,
+      "_why": "top of glass skin / columns (elevations: 6.00 above floor)"
+    }
+  ],
+  "structure": {
+    "fromGroup": "glass",
+    "lineTolerance": 0.06,
+    "gapRange": [
+      0.3,
+      1.0
+    ],
+    "extraColumns": [
+      {
+        "at": [
+          -16.566,
+          23.37
+        ],
+        "facadeAngleDeg": 90,
+        "_why": "SW corner column drawn in A-WALL"
+      }
+    ],
+    "column": {
+      "familyName": "OC_Concreto-Retangular-Coluna",
+      "sourceTypeName": "37 x 48 cm",
+      "topLevel": "N1-COB",
+      "_convention": "type b = across the facade, h = along it; offset along the facade normal (u rotated +90 deg)"
+    },
+    "beam": {
+      "familyName": "OC_Concreto-Viga retangular",
+      "sourceTypeName": "19x40 cm",
+      "typeName": "25x35 cm",
+      "b": 0.25,
+      "h": 0.35,
+      "topZ": 3.15
+    },
+    "facades": [
+      {
+        "angleDeg": 90,
+        "typeName": "25 x 45 cm",
+        "b": 0.25,
+        "h": 0.45,
+        "offset": 0.05,
+        "_why": "west columns drawn 0.25 x 0.44, flush with the glass"
+      },
+      {
+        "angleDeg": -8.91,
+        "typeName": "48 x 25 cm",
+        "b": 0.475,
+        "h": 0.25,
+        "offset": -0.21,
+        "_why": "south fin drawn 0.25 x 0.475 at (6.92, 19.64), projecting outside the glass"
+      }
+    ]
+  }
+}
