@@ -10,6 +10,7 @@ Ferramentas de automação estrutural via MCP (Model Context Protocol) usadas co
 | `agentes/` | Subagentes do Claude Code: `verificador-revit` (desenho das pranchas), `auditor-revit` (conteúdo técnico) e `compatibilizador-revit` (decisões x modelo). Copiar para `~/.claude/agents/`. |
 | `skills/padrao-detalhamento-tms/` | Skill do padrão TMS de detalhamento. Copiar para `~/.claude/skills/`. |
 | `docs/` | `PADRAO-DETALHAMENTO-TMS.md` (o quê), `ROTEIRO-DETALHAMENTO-ACO.md` (como fazer), catálogo de famílias TMS e bibliotecas Python. |
+| `pyrevit-libs/` | Bibliotecas Python usadas via `execute_revit_code` do pyRevit. `claude_verif_lib.py` é o verificador de pranchas (referências, acentos, margens, sobreposições, chamadas cruzadas, solda em V, fabricação e montagem), chamado pelo agente `verificador-revit`. As demais ajudam em cotas, inclinados, notas, empacotamento, recortes e terças. Copiar para `C:\Users\<usuario>\`. |
 | `ferramentas/` | `porta-fixa-pyrevit` (porta fixa por instância do Revit) e utilitários. |
 | `planos/` | Planos de evolução (ex.: armaduras). |
 | `sessoes/` | Modelos de sessão por instância do Revit (pyRevit nas portas 48884 e 48885) com `.mcp.json`. Ajuste os caminhos locais. |
